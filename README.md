@@ -1,3 +1,14 @@
+# Weather App
+
+## Installation
+Simply pull the project files and install all the dependencies provided in package.json file using command "npm install" and also need apiKey of openWeatherMap (put this key at apiKey). Once all the packages have installed successfully then go to terminal with correct directory of the project and give the command 'npm start', Project will start to run on local port 3000.
+
+## ScreenShots
+
+![Screenshot (57)](https://user-images.githubusercontent.com/114590452/229456849-83185619-ae53-4cbd-9a75-971aed53a7d4.png)
+![Screenshot (58)](https://user-images.githubusercontent.com/114590452/229456866-20a01905-f3c5-4bc5-b55f-32405e69b821.png)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
