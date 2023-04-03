@@ -17,9 +17,9 @@ function App() {
   });
   const [name, setName] = useState("");
   const [error, setError] = useState("");
+  const apiKey = "Enter your api key here";
   const handleClick = () => {
     if (name !== "") {
-      const apiKey = "Enter your api key here";
       const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${name}&appid=${apiKey}&units=metric`;
       axios
         .get(apiUrl)
@@ -81,7 +81,10 @@ function App() {
               />
             }
           />
-          <Route path="/forcast" element={<Forecast city={data.name} />} />
+          <Route
+            path="/forcast"
+            element={<Forecast city={data.name} apiKey={apiKey} />}
+          />
         </Routes>
       </Router>
     </div>

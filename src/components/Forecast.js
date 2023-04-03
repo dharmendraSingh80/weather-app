@@ -2,11 +2,10 @@ import React, { useState, useEffect } from "react";
 import "../styles/forcast.css";
 import axios from "axios";
 
-const Forecast = ({ city }) => {
+const Forecast = ({ city, apiKey }) => {
   const [weatherData, setWeatherData] = useState([]);
 
   useEffect(() => {
-    const apiKey = "Enter your api key here";
     const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then((data) => {
       setWeatherData(data.data.list);
